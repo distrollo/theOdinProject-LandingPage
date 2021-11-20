@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100&display=swap');
 
 :root {
     --background-dark: #1F2937;
@@ -9,4 +9,264 @@
     --info-header-text: #1F2937;
     --quote-background-color: #E5E7EB;
     --quote-text: #1F2937;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+
+    background-color: #232323;
+}
+
+.body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    width: 1400px;
+
+    font-family: Roboto;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 0 12em;
+
+    background-color: var(--background-dark);
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 3em;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: start;
+
+    color: var(--header-logo-text);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+
+    list-style: none;
+    gap: 1em;
+}
+
+.nav-links {
+    text-decoration: none;
+    text-align: end;
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+.sub-header-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: 8em 0;
+}
+
+.sub-header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+
+    width: 50%;
+    height: 250px;
+}
+
+.sub-header {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 0 2em 0 0;
+}
+
+.signup-headline {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--hero-main-text);
+}
+
+.signup-text {
+    font-size: 18px;
+    color: var(--hero-secondary-text);
+}
+
+.signup-button {
+    color: var(--hero-secondary-text);
+    background-color: var(--button-cta-background-color);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 7em;
+    height: 2em;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.sub-header-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    height: 250px;
+
+    background-color: #6D747D;
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    background-color: var(--hero-main-text);
+}
+
+.info-header {
+    color: var(--info-header-text);
+    font-size: 36px;
+    font-weight: bolder;
+
+    margin: 1.5em 0;
+}
+
+.info-cards {
+    display: flex;
+    flex-flow: row nowrap;
+
+    gap: 3.5em;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 160px;
+    margin-bottom: 6em;
+}
+
+.card-image {
+    border: solid 4px var(--button-cta-background-color);
+    border-radius: 12px;
+    width: 160px;
+    height: 160px;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.quote {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 6em 19.5em;
+
+    background-color: var(--quote-background-color);
+}
+
+.quote-text {
+    color: var(--quote-text);
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+}
+
+.quote-author {
+    color: var(--quote-text);
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
+
+    padding: 0 2em;
+}
+
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hero-main-text);
+}
+
+.call-to-action {
+    display: flex;
+    flex-flow:row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 6em 12em;
+    padding: 3em 8em;
+
+    background-color: var(--button-cta-background-color);
+    border-radius: 10px;
+}
+
+.cta-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.cta-text-header {
+    color: var(--hero-main-text);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-text-body {
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+.cta-signup-button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--hero-secondary-text);
+    background-color: var(--button-cta-background-color);
+    border: solid 2px var(--hero-main-text);
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 7em;
+    height: 2em;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em 0;
+
+    color: var(--hero-main-text);
+    background-color: var(--background-dark);
+    font-size: 18px;
 }
